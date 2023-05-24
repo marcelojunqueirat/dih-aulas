@@ -42,14 +42,14 @@ programa {
           mensagem = "Adeus."
           pare
         caso contrario:
-          mensagem = "Opção Inválida !"
+          mensagem = "Opção Inválida!"
           pare
       }
 
       // Saida
       escreva(mensagem)
 
-    } enquanto(opcao < 4)
+    } enquanto(opcao != 4)
     
   }
 }
