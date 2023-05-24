@@ -6,6 +6,7 @@ programa {
     caracter: opcao
 
     // Menu
+    // Entrada
     faca {
       escreva("\n\nSELECIONE UMA OPÇÃO \n")
       escreva("1) consultar saldo \n")
@@ -15,6 +16,7 @@ programa {
       leia(opcao)
       escreva("\n")
 
+      // Processamento
       escolha opcao {
         caso "1"
           mensagem = "O saldo atual é de: R$" + resultado
@@ -40,10 +42,11 @@ programa {
           mensagem = "Adeus."
           pare
         caso contrario:
-          escreva ("Opção Inválida !")
+          mensagem = "Opção Inválida !"
           pare
       }
 
+      // Saida
       escreva(mensagem)
 
     } enquanto(opcao < 4)
