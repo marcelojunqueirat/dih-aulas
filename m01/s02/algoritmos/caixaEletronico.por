@@ -1,13 +1,13 @@
 programa {
   funcao inicio() {
     // Declaração de variaveis
-    real: depositoAux = 0, resultado = 0, saqueAux = 0
-    cadeia: mensagem
-    caracter: opcao
+    real depositoAux = 0, resultado = 0, saqueAux = 0
+    cadeia mensagem
+    caracter opcao
 
-    // Menu
-    // Entrada
     faca {
+      // Menu
+      // Entrada
       escreva("\n\nSELECIONE UMA OPÇÃO \n")
       escreva("1) consultar saldo \n")
       escreva("2) realizar um depósito \n")
@@ -16,8 +16,8 @@ programa {
       leia(opcao)
       escreva("\n")
 
-      // Processamento
       escolha opcao {
+        // Processamento
         caso "1"
           mensagem = "O saldo atual é de: R$" + resultado
           pare
@@ -41,7 +41,7 @@ programa {
         caso "4"
           mensagem = "Adeus."
           pare
-        caso contrario:
+        caso contrario
           mensagem = "Opção Inválida!"
           pare
       }
@@ -50,6 +50,5 @@ programa {
       escreva(mensagem)
 
     } enquanto(opcao != 4)
-    
   }
 }
