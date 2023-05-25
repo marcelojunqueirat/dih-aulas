@@ -14,9 +14,12 @@ programa {
       leia(quantidadeHorasTrabalhadas)
       escreva("Informe o valor da hora: ")
       leia(valorHora)
+
+      // Processamento
       valorTotal = valorTotal + (quantidadeHorasTrabalhadas * valorHora)
     }
-
+    
+    // Saida
     escreva("O valor total que empresa terá que pagar para seus funcionarios é de R$:" + valorTotal)
   }
 }
