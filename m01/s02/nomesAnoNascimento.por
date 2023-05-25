@@ -3,7 +3,7 @@ programa {
     cadeia nomes[3]
     inteiro anoAtual = 2023, anoNascimento = 0, anos[3]
 
-    para(inteiro i = 0; i <= 2; i++){
+    para(inteiro i = 0; i < 3; i++){
       escreva("Informe seu nome: ")
       leia(nomes[i])
 
@@ -13,7 +13,7 @@ programa {
       escreva("\n")
     }
 
-    para(inteiro i = 0; i <= 2; i++){
+    para(inteiro i = 0; i < 3; i++){
       escreva("Nome: " + nomes[i] + ", Idade: " + anos[i] + " \n")
     }
 
