@@ -1,8 +1,8 @@
 programa {
   funcao inicio() {
-    real mat[3][3] = 
+    inteiro mat[3][3] = 
     {
-      { 10, 20, 30}, 
+      { 10, 25, 30}, 
       { 40, 50, 60}, 
       { 70, 80, 90}
     }
@@ -10,11 +10,11 @@ programa {
 
     para (inteiro i = 0; i < 3; i++) {
       para (inteiro j = 0; j < 3; j++) {
-        se (mat[i][j] == mat[0][j]) {
+        se (i == 0) {
           somaPrimeiraLinha = somaPrimeiraLinha + mat[i][j]
         }
 
-        se (mat[i][j] == mat[i][1]) {
+        se (j == 1) {
           somaSegundaColuna = somaSegundaColuna + mat[i][j]
         }
       }
