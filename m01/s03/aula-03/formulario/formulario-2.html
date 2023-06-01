@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário - HTML</title>
+</head>
+
+<body>
+    <form>
+        <label for="nome">Nome:</label>
+        <input autofocus type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <label for="senha">Senha:</label>
+        <input  type="password" id="senha" name="senha" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label><b>Quais linguagens você sabe</b></label><br>
+        <input type="checkbox" id="idioma1" name="idioma" value="ingles">
+        <label for="idioma1">Inglês</label>
+
+        <input type="checkbox" id="idioma2" name="idioma" value="portugues" checked>
+        <label for="idioma2">Português</label>
+
+        <input type="checkbox" id="idioma3" name="idioma" value="espanhol">
+        <label for="idioma3">Espanhol</label>
+        <br><br>
+
+        <label><b>Possui Passaporte</b></label><br>
+        <input type="radio" id="possuiPassaporteSim" name="possuiPassaporte" value="s">
+        <label for="sim">Sim</label>
+
+        <input type="radio" id="possuiPassaporteNao" name="possuiPassaporte" value="n" checked>
+        <label for="nao">Não</label>
+        <br><br>
+        <input type="submit">
+        <br><br>
+    </form>
+
+</body>
+
+</html>

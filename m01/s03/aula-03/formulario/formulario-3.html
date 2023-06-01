@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário - HTML</title>
+</head>
+
+<body>
+    <form>      
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="">São Paulo</option>
+            <option value="sao-paulo">São Paulo</option>
+            <option value="rio-de-janeiro">Rio de Janeiro</option>
+            <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
+        </select>
+        <br><br> 
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+            <optgroup label="Sudeste">
+                <option value="sao-paulo">São Paulo</option>
+                <option value="rio-de-janeiro">Rio de Janeiro</option>
+            </optgroup>
+            <optgroup label="Centro Oeste">
+                <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
+                <option value="mato-grosso-do-sul">Goiás</option>
+            </optgroup>            
+        </select>
+        <br><br> 
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado"  multiple size="5">
+            <optgroup label="Sudeste">
+                <option value="sao-paulo">São Paulo</option>
+                <option value="rio-de-janeiro">Rio de Janeiro</option>
+            </optgroup>
+            <optgroup label="Centro Oeste">
+                <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
+                <option value="mato-grosso-do-sul">Goiás</option>
+            </optgroup>            
+        </select>
+        <br><br>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+
+        <input type="submit">
+        <br><br>
+    </form>
+
+</body>
+
+</html>

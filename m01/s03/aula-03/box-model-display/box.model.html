@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body {
+            background: linear-gradient(270deg, #F56077 0%, #C20757 52%, #B41A83 100%);
+            font-size: 4rem;
+        }
+
+       
+        .box {
+            box-sizing: border-box;
+            font-size: 2rem;
+            width: 200px;
+            height: 200px;
+            background-color: #9ec965;
+            margin: 20px;
+            padding: 20px;
+
+            border-radius: 20px;
+            color: white;
+
+            display: inline-block;                        
+        }
+        .box-invisivel {
+            visibility: hidden;           
+        }
+
+        .main {
+            text-align: left;
+        }
+
+        .main::after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+        .box-1 {
+            text-align: center;
+        }
+
+    </style>
+<body>    
+    <main class="main">
+        <div class="box box-1"> 
+            Item 1           
+        </div>
+       
+        <div class="box box-2"> 
+            Item 2          
+        </div>
+       
+        <div class="box box-3"> 
+            Item 2          
+        </div>      
+    </main>
+
+    <div class="main">
+        <div class="box box-1"> 
+            Item 1   
+            <img width="20" src="https://github.com/kelvisdev.png" alt="">        
+        </div>
+       
+        <div class="box box-2"> 
+            Item 2          
+        </div>
+       
+        <div class="box box-3"> 
+            Item 2          
+        </div>      
+    </div>
+
+    <div class="main">
+        <div class="box box-1"> 
+            Item 1           
+        </div>
+       
+        <div class="box box-2 box-invisivel"> 
+            Item 2          
+        </div>
+       
+        <div class="box box-3"> 
+            Item 2          
+        </div>      
+    </div>
+    
+</body>
+</html>
