@@ -1,0 +1,19 @@
+body {
+  background-color: #b52e2e;
+}
+
+#info-basicas {
+  color: white;
+  background-color: #39274a;
+}
+
+.grupo-hobbies {
+  color: white;
+  background-color: green;
+}
+
+cite {
+  color: white;
+  background-color: blue;
+}
+

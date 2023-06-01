@@ -1,0 +1,22 @@
+body {
+    background-color: #b52e2e;
+}
+
+#grupo-destaque {
+    color: white;
+    background-color: #39274a;
+}
+
+.grupo-destaque {
+    color: white;
+    background-color: green;
+}
+
+.cor-primaria {
+    color: rgb(8, 29, 30);
+}
+
+p {
+    color: white;
+    background-color: blue;
+}
