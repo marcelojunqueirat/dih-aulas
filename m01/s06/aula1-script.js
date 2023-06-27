@@ -25,8 +25,11 @@ let dobro = numeros.map((numero) => {
 })
 console.log(dobro)
 
-// FILTRAR UM ARRAY
+// FILTRAR ARRAY
 numerosFiltrados = numeros.filter((numero) => {
   return numero > 5;
 })
 console.log(numerosFiltrados)
+
+
+
