@@ -25,3 +25,6 @@ let criarElemento = ((texto) => {
 
 criarElementoLista(nomes)
 criarElemento('teste')
+
+let liDipirona = document.querySelector('.mais-vendido');
+liDipirona.remove();
