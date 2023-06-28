@@ -17,11 +17,11 @@ let criarElementoLista = (lista) => {
   })
 }
 
-let criarElemento = ((texto) => {
+let criarElemento = (texto) => {
   let liElement = document.createElement('li');
   liElement.innerText = texto;
   ulElement.appendChild(liElement);
-})
+}
 
 criarElementoLista(nomes)
 criarElemento('teste')
