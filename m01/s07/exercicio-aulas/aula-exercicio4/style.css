@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  padding: 10px;
+}
+
+.destaque {
+  border: 3px solid red
+}
