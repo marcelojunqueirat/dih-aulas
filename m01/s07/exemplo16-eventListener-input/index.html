@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="text" placeholder="Pesquisar" id="inputPesquisa">
+
+  <script>
+    let inputPesquisa = document.getElementById('inputPesquisa')
+
+    inputPesquisa.addEventListener("keydown", (e) => {
+      // console.log('pequisando no backend');
+      console.log(inputPesquisa.value);
+    })
+
+    inputPesquisa.addEventListener("keyup", (e) => {
+      // console.log(e);
+    })
+
+    inputPesquisa.addEventListener("mouseover", (e) => {
+      // console.log(e);
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="formulario" name="formulario" action="">
+    <input type="text" name="nome" placeholder="Informe seu nome" />
+
+    <input type="submit" value="Adicionar" />
+
+  </form>
+  <!-- <button id="botao">Adicionar</button> -->
+
+  <script>
+    let formulario = document.getElementById('formulario');
+    let botao = document.getElementById('botao');
+
+    formulario.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let formulario = document.getElementById('formulario');
+
+      if (!formulario.nome.value.trim()) {
+        alert('Nome Invalido');
+        formulario.nome.value = '';
+      } else {
+        console.log(formulario.nome.value);
+        addPessoa(formulario.nome.value);
+        formulario.nome.value = '';
+      }
+    })
+
+
+    // botao.addEventListener('click', (e) => {
+    //   // e.preventDefault(); //para desativar enter de dar submit
+    //   let formulario = document.getElementsByName('formulario')[0];
+
+    //   if (!formulario.nome.value.trim()) {
+    //     alert('Nome Invalido');
+    //     formulario.nome.value = '';
+    //   } else {
+    //     console.log(formulario.nome.value);
+    //     addPessoa(formulario.nome.value);
+    //     formulario.nome.value = '';
+    //   }
+    // })
+
+    function addPessoa(nome) {
+      let pessoaElement = document.createElement('p');
+      pessoaElement.innerText = nome;
+
+      document.querySelector('body').appendChild(pessoaElement);
+    }
+  </script>
+</body>
+
+</html>

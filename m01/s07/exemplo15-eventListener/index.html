@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="paragrafo">Bem vindo</p>
+
+  <button id="botao">Cancelar Evento mouseover</button>
+
+
+
+  <script>
+    let contador = 0;
+    let paragrafoElement = document.querySelector('#paragrafo');
+    let botaoElement = document.querySelector('#botao');
+    
+    paragrafoElement.addEventListener("mouseover", mostrarTexto)
+
+    botaoElement.addEventListener("click", () => {
+      paragrafoElement.removeEventListener("mouseover", mostrarTexto)
+    });
+    
+    function mostrarTexto() {
+      let paragrafoElement = document.querySelector('#paragrafo');
+      console.log(paragrafoElement.innerText + " " + contador)
+      contador++
+    }
+  </script>
+</body>
+
+</html>

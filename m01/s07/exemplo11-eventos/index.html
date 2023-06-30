@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="dizerBemVindo()" >Adicionar texto</button>
+
+
+  <script>
+    let indice = 0
+    function dizerBemVindo() {
+      indice +=1;
+      let frase = "Bem vindo: " + indice;
+      console.log(frase);
+
+      let textoElement = document.createElement('p');
+      textoElement.innerText = frase;
+      console.log(textoElement);
+
+      let bodyElement = document.querySelector('body');
+      bodyElement.appendChild(textoElement);
+    }
+  </script>
+</body>
+</html>
