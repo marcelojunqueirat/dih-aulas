@@ -2,9 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import { MedicamentoContextProvider } from './context/MedicamentoContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <MedicamentoContextProvider>
     <App />
-  </React.StrictMode>,
+  </MedicamentoContextProvider>
 )

@@ -14,6 +14,9 @@ function FormularioNovoMedicamento() {
 
     //chamada da função de cadastro
     AdicionarMedicamento(nome, laboratorio, preco)
+    setNome("")
+    setLaboratorio("")
+    setPreco(0)
   }
   
   return (

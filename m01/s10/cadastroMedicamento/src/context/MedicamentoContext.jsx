@@ -38,6 +38,42 @@ export const MedicamentoContextProvider = ({children}) => {
     setListaMedicamentos(novaLista)
     alert('Medicamento cadastrado com sucesso!')
     console.log(novaLista);
+    localStorage.setItem("listaMedicamentos", JSON.stringify(novaLista))
+  }
+
+  const FavoritarMedicamento = (id) => {
+
+    // // SOLUCAO 1
+    // // procura medicamento a ser encontrado
+    // const medicamento = listaMedicamentos.filter(item => item.id == id)
+    
+    // // valida se existe medicamento
+    // if(medicamento.length == 0){
+    //   return
+    // }
+
+    // //marcamos medicamento como favorito (ou nao)
+    // medicamento.favorito = !medicamento.favorito
+
+    // // pegamos toda a lista novamente sem o medicamento
+    // const listaFiltrada = listaMedicamentos.filter(item => item.id != id)
+
+    // // juntamos novamente toda a lista
+    // const novaLista = [...listaFiltrada, medicamento]
+
+    // // atualizamos a lista
+    // setListaMedicamentos(novaLista)
+
+    // SOLUCAO 2
+    const lista = listaMedicamentos.map((item) => {
+      if(item.id == id){
+        item.favorito = !item.favorito
+      }
+
+      return item
+    })
+
+    setListaMedicamentos(lista)
   }
 
   return (
