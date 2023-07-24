@@ -6,7 +6,7 @@ function CardMedicamento({medicamento}) {
 
   return (
     <div>
-      <button>{medicamento.favorito.toString()}</button>
+      <button onClick={() => FavoritarMedicamento(medicamento.id)}>{medicamento.favorito.toString()}</button>
       <img 
         width={150}
         src="https://img.freepik.com/vetores-premium/frasco-de-medicamento-em-branco-com-caixa-realista_134452-15.jpg?w=2000"

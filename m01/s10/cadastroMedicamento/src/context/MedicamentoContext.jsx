@@ -17,7 +17,7 @@ import { createContext, useState } from 'react'
 export const MedicamentoContext = createContext()
 
 export const MedicamentoContextProvider = ({children}) => {
-  const [listaMedicamentos, setListaMedicamentos] = useState([])
+  const [listaMedicamentos, setListaMedicamentos] = useState(JSON.parse(localStorage.getItem("listaMedicamentos")) || [] )
 
   const AdicionarMedicamento = (nome, laboratorio, preco) => {
     if(nome.length == '' || laboratorio.length == '' || preco == 0){
@@ -77,7 +77,7 @@ export const MedicamentoContextProvider = ({children}) => {
   }
 
   return (
-    <MedicamentoContext.Provider value={{listaMedicamentos, AdicionarMedicamento}}>
+    <MedicamentoContext.Provider value={{listaMedicamentos, AdicionarMedicamento, FavoritarMedicamento}}>
       {children}
     </MedicamentoContext.Provider>
   )
