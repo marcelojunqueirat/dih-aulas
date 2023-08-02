@@ -1,17 +1,17 @@
-import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import { Header } from '../components/Header'
 import { Main } from '../components/Main'
 
-function Home() {
+function AboutMe() {
   return (
     <>
       <Header />
       <Main>
-        <p>Home</p>
+        <p>About me</p>
       </Main>
       <Footer />
     </>
   )
 }
 
-export { Home }
+export { AboutMe }
