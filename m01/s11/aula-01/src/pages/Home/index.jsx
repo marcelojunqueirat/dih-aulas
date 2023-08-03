@@ -4,7 +4,7 @@ import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
 import { Main } from '../../components/Main'
 import { api } from '../../services/api'
-import { HomeUlStyled, HomeLiStyled } from './styled'
+import { HomeUlStyled, HomeLiStyled, HomeImgStyled } from './styled'
 
 function Home() {
   const [users, setUsers] = useState([])
@@ -27,7 +27,7 @@ function Home() {
             users.length > 0 && users.map(({ login, avatar_url }) => (
               <HomeLiStyled key={login}>
                 <p>{login}</p>
-                <img src={avatar_url} alt={`Foto do ${login}`} style={{ borderRadius: 90, width: 90 }} />
+                <HomeImgStyled src={avatar_url} alt={`Foto do ${login}`} />
                 <Link to={`portfolio/${login}`}>
                   Venha ver meu portfolio
                 </Link>

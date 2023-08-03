@@ -16,3 +16,8 @@ export const HomeLiStyled = styled.li`
   align-items: center;
   justify-content: space-around;
 `
+
+export const HomeImgStyled = styled.img`
+  border-radius: 90px;
+  width: 90px;
+`
