@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: "https://api.github.com/"
+  baseURL: import.meta.env.VITE_REACT_APP_API_GITHUB
 })
 
 export { api }

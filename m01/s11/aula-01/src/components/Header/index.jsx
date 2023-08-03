@@ -10,10 +10,6 @@ function Header() {
     {
       route: "/aboutme",
       description: "About me"
-    },
-    {
-      route: "/portfolio",
-      description: "Catalogo de Projetos"
     }
   ]
 

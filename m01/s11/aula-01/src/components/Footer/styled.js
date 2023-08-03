@@ -9,5 +9,5 @@ export const FooterStyled = styled.footer`
   left: 0;
   right: 0;
   height: 50px;
-  border-top: 1px solid green
+  border-top: 1px solid gray
 `
