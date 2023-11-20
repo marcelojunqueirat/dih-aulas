@@ -1,9 +1,11 @@
 programa {
   funcao inicio() {
     // Declaração de variaveis
-    real depositoAux = 0, resultado = 0, saqueAux = 0
+    real salarioBruto
+    inteiro idade
     cadeia mensagem
     caracter opcao
+    logico ehRepetente
 
     faca {
       // Menu

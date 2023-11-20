@@ -1,8 +1,8 @@
 programa {
   funcao inicio() {
     // Declaração de variaveis
-    real: pesoPessoa1, pesoPessoa2, pesoPessoa3, pesoPessoa4, pesoMaximoPermitido, pesoTotal
-    cadeia: mensagem
+    real pesoPessoa1, pesoPessoa2, pesoPessoa3, pesoPessoa4, pesoMaximoPermitido, pesoTotal
+    cadeia mensagem
 
     // Entrada
     escreva("Informe o peso(KG) da primeira pessoa: \n ")
