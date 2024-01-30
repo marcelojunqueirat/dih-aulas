@@ -25,8 +25,8 @@ function App() {
       />
       <button onClick={() => adicionarTarefa(tarefa)}>Adicionar</button>
 
-      {listaTarefas.map((tarefa) => (
-        <div key={tarefa}>
+      {listaTarefas.map((tarefa, id) => (
+        <div key={id}>
           <li>{tarefa}</li>
           <button onClick={() => removerTarefa(tarefa)}>Remover</button>
         </div>
