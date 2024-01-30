@@ -8,11 +8,10 @@ function App() {
   const adicionarTarefa = (tarefa) => {
     const listaTarefasAtualizada = [...listaTarefas, tarefa]
     setListaTarefas(listaTarefasAtualizada)
-    tarefa = '';
   }
 
   const removerTarefa = (tarefa) => {
-    setListaTarefas(listaTarefas.filter(t => t != tarefa))
+    setListaTarefas(listaTarefas.filter(listaTarefa => listaTarefa != tarefa))
   }
 
   return (
