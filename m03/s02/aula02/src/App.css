@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+#avatar {
+  border-radius: 50%;
+  width: 50%;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
