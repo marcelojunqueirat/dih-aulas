@@ -6,6 +6,8 @@ function App() {
   const [newJoke, setNewJoke] = useState(0)
 
   const [user, setUser] = useState({})
+  const [userName, setUsername] = useState('marcelojunqueirat')
+  const [search, setSearch] = useState('')
 
   useEffect(() => {
     fetch('https://api.chucknorris.io/jokes/random')
@@ -15,11 +17,11 @@ function App() {
   }, [newJoke])
 
   useEffect(() => {
-    fetch('https://api.github.com/users/marcelojunqueirat')
+    fetch(`https://api.github.com/users/${userName}`)
       .then(response => response.json())
       .then(data => setUser(data))
       .catch(error => console.error(error))
-  }, [])
+  }, [userName])
 
   return (
     <>
@@ -29,8 +31,11 @@ function App() {
 
       <hr />
 
+      <input placeholder="Usuário" type="text" onChange={(event) => setSearch(event.target.value)} />
+      <button onClick={() => setUsername(search)}>Buscar</button>
+
       <div>
-        <img id='avatar' src={user.avatar_url} alt="" />
+        <img id='avatar' src={user.avatar_url} alt={user.name} />
       </div>
 
       <h3>{user.name}</h3>
