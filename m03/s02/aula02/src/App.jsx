@@ -19,7 +19,7 @@ function App() {
       .then(response => response.json())
       .then(data => setUser(data))
       .catch(error => console.error(error))
-  }, [newJoke])
+  }, [])
 
   return (
     <>
