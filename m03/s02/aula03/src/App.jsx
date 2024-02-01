@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import { Button } from './components/Button'
+import { AdviceCard } from './components/AdviceCard'
 
 function App() {
   const [adviceList, setAdiviceList] = useState([])
@@ -19,12 +21,8 @@ function App() {
 
   return (
     <main>
-      <button onClick={() => handleAdvice(advice)}>Add Advice</button>
-      <div>
-        {adviceList.map((advice, key) => (
-          <p key={key}>{`${key + 1} - ${advice}`}</p>
-        ))}
-      </div>
+      <Button title={"Add Advice"} onClick={() => handleAdvice(advice)} />
+      <AdviceCard list={adviceList} />
     </main>
   )
 }
