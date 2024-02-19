@@ -1,0 +1,17 @@
+--INSERT INTO
+--    task(
+--            guid,
+--            title,
+--            created_at,
+--            deleted,
+--            description,
+--            status,
+--            owner_id)
+--    VALUES(
+--        'e7127673-4cf1-4859-a76e-3f96402287f7',
+--        'Tarefa 01',
+--        '2024-02-14 20:07:27.972526',
+--        false,
+--        'Descrição da tarefa',
+--        'NOT_STARTED',
+--        'd7f4a97d-124f-4378-9c34-57c02a6c18b1') ON CONFLICT (guid, title) DO NOTHING;
