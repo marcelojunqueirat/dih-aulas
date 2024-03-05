@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     setList(dataCrypto);
-  }, dataCrypto);
+  }, [dataCrypto]);
 
   return (
     <>
@@ -17,4 +17,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

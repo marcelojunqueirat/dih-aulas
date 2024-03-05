@@ -5,8 +5,8 @@ function Card({list}) {
     <ul>
       {list.map((item, i) => (
         <li key={i}>
-          <div id="perfil-data">
-            <img id="perfil-photo" src={item.foto_perfil} alt={item.criador} />
+          <div className="perfil-data">
+            <img className="perfil-photo" src={item.foto_perfil} alt={item.criador} />
             {item.nome}
             <span>{item.nickcriador}</span>
           </div>
